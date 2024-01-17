@@ -1,4 +1,5 @@
-class public Program1{
+import java.util.Arrays;
+public class Program1{
 
 	public static void main(String[] args){
 		
@@ -22,7 +23,10 @@ class public Program1{
 		arr[0] = 70;
 		System.out.println(arr[0]);//70
 		
-
+		
+		//Declare + Intialize At a time
+		int[] arr2 = {1,2,3,4,5};
+		System.out.println(Arrays.toString(arr2));//[1, 2, 3, 4, 5]
 	}
 }
 

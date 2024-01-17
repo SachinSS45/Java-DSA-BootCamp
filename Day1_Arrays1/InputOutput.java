@@ -22,5 +22,10 @@ public class InputOutput{
 		for(int i=0; i<arr.length; i++){
 			System.out.print(arr[i] + " ");
 		}
+
+		//We can Array size as a Input also
+		
+		int size = sc.nextInt();
+		int[] arr2 = new int[size];
 	}
 }
