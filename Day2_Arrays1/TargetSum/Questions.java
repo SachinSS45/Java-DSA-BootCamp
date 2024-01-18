@@ -1,4 +1,4 @@
-/*
+package TargetSum;/*
  * (1) Find the number of pairs have sum as Target
  * (2) Count the number of triplets whose sum is equal to the given value x
  *
@@ -6,7 +6,8 @@
 import java.util.Scanner;
 import java.util.Arrays;
 public class Questions{
-	
+
+	//1
 	static int pairSum(int[] arr,int target){
 		int count = 0;
 		for(int i=0;i<arr.length-1;i++){
@@ -14,6 +15,20 @@ public class Questions{
 			for(int j=i+1;j<arr.length;j++){
 
 				if(arr[i]+arr[j]==target)count++;
+			}
+		}
+		return count;
+	}
+	//2
+	static int tripletSum(int[] arr,int target){
+		int count = 0;
+		for(int i=0;i<arr.length-1;i++){
+
+			for(int j=i+1;j<arr.length;j++){
+
+				for(int k=j+1;k<arr.length;k++){
+					if(arr[i]+arr[j]+arr[k]==target)count++;
+				}
 			}
 		}
 		return count;
@@ -38,6 +53,6 @@ public class Questions{
 		int target = sc.nextInt();
 
 		System.out.println("Number of pairs with target sum " + target + " : " + pairSum(arr,target));
-
+		System.out.println("Number of triplets with target sum " + target + " : " + tripletSum(arr,target));
 	}
 }

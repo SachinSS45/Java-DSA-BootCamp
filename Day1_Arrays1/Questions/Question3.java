@@ -1,3 +1,7 @@
+package Questions;
+
+import java.util.Scanner;
+
 //Linear Search
 public class Question3{
 

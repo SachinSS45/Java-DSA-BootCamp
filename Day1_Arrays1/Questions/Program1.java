@@ -1,4 +1,4 @@
-/*Q.1 Given an array of elements of marks of students ,if the mark of any student is less than 35 print it's roll  number.[roll number here refer to the index of the array]
+package Questions;/*Q.1 Given an array of elements of marks of students ,if the mark of any student is less than 35 print it's roll  number.[roll number here refer to the index of the array]
  */
 
 class Program1{
